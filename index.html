@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="./CSS/styles.css">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Document</title>
 </head>
 <body>
+    <header>
+        
+        <a href="#" class="logo">
+            <img src="./img/logo.png" class="logo_img" alt="">
+            Assassin's Creed Web
+        </a>
+       
+        <nav class="navbar-menu">
+            <a href="#">Inicio <span></span></a>
+            <a href="#">Juegos <span></span></a>
+            <a href="#">Personajes <span></span></a>
+            <a href="#">Acerca de <span></span></a>
+        </nav>
+
+        <div class="action">
+            <div class="searchBx">
+                <a href="#"><i class='bx bx-search'></i></i></a>
+                <input type="text" placeholder="Buscar Juego">
+            </div>
+        </div>
+        <!-- <div class="header-icon">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div> -->
+    </header>
+
+    <!--.................init pag start.................-->
+    <div class="img-fond1">
+        <img class="fondo-1" src="./img/fondo1-1.jpg" alt="">
+    </div>
+    <div class="descripcion-prin">
+        <h2>¿Que es Assassin's Creed?</h2>
+        <p>
+            Assassin's Creed es una saga de videojuegos creada 
+            por Ubisoft, con títulos en nuestra base de datos 
+            desde 2007 y que actualmente cuenta con un total 
+            de 48 juegos para PS5, Xbox Series X/S, Switch, 
+            PS4, Xbox One, Wii U, PSVITA, Android, iPhone, 
+            PSP, PC, NDS, PS3, Xbox 360.
+        </p>
+    </div>
+    <!--.................about start.................-->
+    <div class="about">
+        <div class="contentBx">
+            <h2>Acerca de</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo obcaecati dolorem dolore vero optio quam atque, ipsam amet distinctio laudantium, architecto nam ad impedit. Sunt consequatur eos quas architecto aliquid.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cupiditate magni quas aperiam officiis amet tempore a, deserunt dolor id accusantium reiciendis facere assumenda eum perspiciatis numquam explicabo quo sapiente!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum perferendis quod nostrum earum debitis aliquam repellat reiciendis, aperiam, deleniti magnam ipsam, veritatis officiis dolor quas atque obcaecati ad hic nam.
+            </p>
+            <a href="#">Leer mas</a>
+        </div>
+        <img class="gato_gamer" src="./img/cat-gaming.png" alt="gato gamer">
+    </div>
+
+    <!-- <script>
+        // Sticky NavBar
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script> -->
+    <!--.................about end.................-->
     
 </body>
 </html>
