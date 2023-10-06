@@ -7,8 +7,8 @@
     --other-color: #fcfcfc;
     --header-color: #333333;
     --h2-font-color: #fff;
-    --h2-font: 5rem;
-    --h2-2-font: 4rem;
+    --h1-font: 5rem;
+    --h2-font: 4rem;
     --p-font: 2rem;
 }
 
@@ -28,7 +28,15 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
 }
-
+/* (Start) Modificar el scroll (o barra de bajada) */
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-thumb{
+    background: #0ef;
+    border-radius: 0.6rem;
+}
+/* (End) Modificar el scroll (o barra de bajada) */
 header{
     position: fixed;
     width: 100%;
@@ -42,10 +50,9 @@ header{
     background: var(--header-color);
 }
 
-/* header.sticky{
-    
+header.sticky{
     box-shadow: 0 0.5rem 2rem rgba(58, 58, 58, 0.9);
-} */
+}
 
 .navbar-menu a{
     position: relative;
@@ -134,13 +141,13 @@ header .action .searchBx input{
 }
 
 .img-fond1 .fondo-1{
-    width: 100vw;
+    width: 99vw;
     height: 70vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border-radius: 0.5rem;
+    
     
 }
 
@@ -151,19 +158,28 @@ header .action .searchBx input{
     padding-bottom: 3.5rem;
     background-repeat: no-repeat;
     box-sizing: inherit;
+    border-radius: 0.5rem;
 }
 
-h2{
+h1{
     display: block;
-    font-size: var(--h2-font);
-
+    font-size: var(--h1-font);
     margin-inline-start: 0rem;
     margin-inline-end: 0rem;
     font-weight: bold;
     text-align: center;
 }
 
-p{
+h2{
+    display: block;
+    font-size: var(--h2-font);
+    margin-inline-start: 0rem;
+    margin-inline-end: 0rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.descripcion-prin p{
     display: block;
     font-size: var(--p-font);
     margin-block-start: 1em;
@@ -192,15 +208,21 @@ p{
     margin: 2rem;
 }
 .about .contentBx h2{
-    font-size: var(--h2-2-font);
+    font-size: var(--h2-font);
     font-weight: 700;
     color: #fff;
 }
 
 .about .contentBx p{
+    display: block;
+    font-size: var(--p-font);
     min-width: 60rem;
     text-align: justify;
     color: var(--text-color);
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0rem;
+    margin-inline-end: 0rem;
 }
 
 .about .contentBx a{
@@ -227,3 +249,150 @@ p{
     width: 40%;
 }
 /* .............................about end ............................. */
+
+/* .............................games start ............................. */
+.games{
+    padding: 0rem 10rem;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem auto;
+    
+}
+
+.games h2{
+    color: var(--text-color);
+    margin: 1rem 0rem;
+}
+
+.games ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.games ul li{
+    list-style: none;
+    padding: 1rem 2rem;
+    border: 0.1rem solid var(--main-color);
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.games ul li.active{
+    background: var(--main-color);
+    color: #050e2d;
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* .games ul li:hover{
+    background: var(--main-color);
+    color: #050e2d;
+    box-shadow: 0 0 1rem var(--main-color);
+} */
+
+ .games .cardBx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.games .cardBx .card{
+    width: 27rem;
+    border-radius: 1rem;
+    margin: 2rem 4rem;
+    background: #333D75;
+    overflow: hidden;
+}
+
+
+.games .cardBx .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover
+} 
+
+.games .cardBx .card .content{
+    padding: 1rem;
+}
+
+.games .cardBx .card .content h4{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin: 0.5rem 0rem;
+    text-align: center;
+}
+
+.games .cardBx .card .progress-line{
+    position: relative;
+    height: 1rem;
+    width: 100%;
+    background: #3E4B91;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.games .cardBx .card .progress-line span{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    background: var(--main-color);
+    box-shadow: 0 0 1rem var(--main-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate{
+    100%{
+        transform: scaleX(1); 
+    }
+}
+
+.games .cardBx .card .info{
+    border-top: 0.2rem solid #3E4B91;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.games .cardBx .card .info p{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.games .cardBx .card .info p span{
+    font-size: 2rem;
+    color: var(--text-color);   
+}
+
+.games .cardBx .card .info p span .star.active{
+    color: yellow;
+}
+
+.games .cardBx .card.hide{
+    display: none;
+}
+
+
+
+/* .............................games end ............................. */
+
