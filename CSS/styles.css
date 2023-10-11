@@ -366,7 +366,7 @@ h2{
     }
 }
 
-.games .cardBx .card .info{
+.games .cardBx .card .calificacion{
     border-top: 0.2rem solid #3E4B91;
     padding: 0.5rem;
     display: flex;
@@ -374,17 +374,17 @@ h2{
     align-items: center;
 }
 
-.games .cardBx .card .info p{
+.games .cardBx .card .calificacion p{
     font-size: 1.2rem;
     color: var(--text-color);
 }
 
-.games .cardBx .card .info p span{
+.games .cardBx .card .calificacion p span{
     font-size: 2rem;
     color: var(--text-color);   
 }
 
-.games .cardBx .card .info p span .star.active{
+.games .cardBx .card .calificacion p span .star.active{
     color: yellow;
 }
 
@@ -392,7 +392,185 @@ h2{
     display: none;
 }
 
-
-
+.games .cardBx .card .plataformas{
+    font-size: 1.5rem;
+}
 /* .............................games end ............................. */
+/* .............................Descripcion star ............................. */
+.description{
+    padding: 0rem 10rem;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.description h2{
+    color: var(--text-color);
+    margin: 1rem 0rem;
+}
+
+.description .boxBx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.description .boxBx .box{
+    width: 35rem;
+    border-radius: 1rem;
+    margin:  2rem 4rem;
+    background: #333D75;
+    overflow: hidden;
+}
+
+.description .boxBx .box img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    background-size: cover
+}
+
+.description .boxBx .box .content{
+    padding: 1rem;
+}
+.description .boxBx .box .content h4{
+    color: var(--text-color);
+    margin-top: 1.5rem;
+}
+
+.description .boxBx .box .content h4 span{
+    color: var(--main-color);
+}
+
+.description .boxBx .box .content p{
+    text-align: justify;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+.description .boxBx .box .content .btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.description .boxBx .box .content .visita{
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 2rem 0rem;
+    border: 0.1rem solid var(--main-color);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 2rem;
+    color: var(--main-color);
+    letter-spacing: 0.1rem;
+}
+
+.description .boxBx .box .content .comprar{
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 2rem 0rem;
+    border: 0.1rem solid var(--main-color);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 2rem;
+    color: var(--main-color);
+    letter-spacing: 0.1rem;
+}
+
+.description .boxBx .box .content .visita:hover{
+    background: var(--main-color);
+    border: none;
+    color: #050e2d;
+    box-shadow: 0 0 1rem var(--main-color)
+}
+
+.description .boxBx .box .content .comprar:hover{
+    background: var(--main-color);
+    border: none;
+    color: #050e2d;
+    box-shadow: 0 0 1rem var(--main-color)
+}
+/* .............................Descripcion end ............................. */
+
+/* .............................contacto end ............................. */
+
+.contact{
+    padding: 2rem 10rem;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact img{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.contact .form{
+    width: 50%;
+    margin: 3rem;
+}
+.contact .form h1{
+    color: var(--text-color);
+}
+
+.contact .form .inputBx{
+    margin: 1rem 0;
+}
+
+.contact .form .inputBx p{
+    color: var(--text-color);
+    font-size: 1.6rem;
+}
+
+.contact .form .inputBx input,
+.contact .form .inputBx textarea{
+    border: none;
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+    color: #fff;
+    background: #3E4B91;
+    min-height: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.contact .form .inputBx textarea{
+    height: 15rem;
+}
+
+.contact .form .inputBx input[type="submit"]{
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 1.5rem 0;
+    outline: none;
+    background: transparent;
+    border: 0.1rem solid var(--main-color);
+    text-decoration: none;
+    font-weight: 700;
+    width: 15rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    letter-spacing: 0.1rem;
+}
+
+.contact .form .inputBx input[type="submit"]:hover{
+    background: var(--main-color);
+    border: none;
+    color: #050e2d;
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* .............................footer star ............................. */
+
+/* .............................footer end ............................. */
