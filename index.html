@@ -19,15 +19,25 @@
         
         <a href="#" class="logo">
             <img src="./img/logo.png" class="logo_img" alt="">
-            Assassin's Creed Web
         </a>
-       
-        <nav class="navbar-menu">
-            <a href="#">Inicio <span></span></a>
-            <a href="#">Juegos <span></span></a>
-            <a href="#">Descripcion <span></span></a>
-            <a href="#">Acerca de <span></span></a>
-        </nav>
+
+        <ul class="nav">
+            <li><a href="#home">Inicio <span></span></a></li>
+            <li><a href="#games">Juegos <span></span></a></li>
+            <li><a href="#description">Descripcion <span></span></a></li>
+            <li><a href="#contact">Contacto <span></span></a></li>
+        </ul>
+
+        <!-- <nav class="navbar-menu">
+            <button class="header-icon">
+                <i class='bx bx-menu' id="menu-icon"></i>
+            </button>
+
+            <a href="#home">Inicio <span></span></a>
+            <a href="#games">Juegos <span></span></a>
+            <a href="#description">Descripcion <span></span></a>
+            <a href="#contact">Contacto <span></span></a>
+        </nav> -->
 
         <div class="action">
             <div class="searchBx">
@@ -35,13 +45,12 @@
                 <input type="text" placeholder="Buscar Juego">
             </div>
         </div>
-        <!-- <div class="header-icon">
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </div> -->
+
+        <div class="altermenu active" onclick="altermenu();"></div>
     </header>
 
     <!--.................init pag start.................-->
-    <div class="img-fond1">
+    <div class="img-fond1" id="home">
         <img class="fondo-1" src="./img/fondo1-1.jpg" alt="">
     </div>
     <div class="descripcion-prin">
@@ -56,21 +65,23 @@
         </p>
     </div>
     <!--.................about start.................-->
-    <div class="about">
+    <div class="about animeX" id="about">
         <div class="contentBx">
             <h2>Acerca de</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo obcaecati dolorem dolore vero optio quam atque, ipsam amet distinctio laudantium, architecto nam ad impedit. Sunt consequatur eos quas architecto aliquid.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cupiditate magni quas aperiam officiis amet tempore a, deserunt dolor id accusantium reiciendis facere assumenda eum perspiciatis numquam explicabo quo sapiente!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum perferendis quod nostrum earum debitis aliquam repellat reiciendis, aperiam, deleniti magnam ipsam, veritatis officiis dolor quas atque obcaecati ad hic nam.
+            <p>
+                Assassin's Creed es una serie de videojuegos, historietas, libros, y cortos de ficción histórica. Los videojuegos son de acción-aventura, sigilo y de mundo abierto. Se diferencian en videojuegos principales y spin-offs.
+                <br>
+                Los juegos principales de la franquicia han sido desarrollados por Ubisoft Montreal (modo de un solo jugador) y Ubisoft Annecy (modo multijugador) y los títulos portátiles por Ubisoft Blue Byte, Gameloft y Gryptonite Studios, con Ubisoft Montreal como desarrollador adicional y supervisor.
+                La serie ha sido muy bien recibida por el público y la crítica, y ha vendido más de 155 millones de copias hasta octubre de 2020. La serie está inspirada en la novela Alamut del escritor esloveno Vladimir Bartol, y es considerada por algunos como el sucesor espiritual de la serie Prince of Persia.
             </p>
             <a href="#">Leer mas</a>
         </div>
-        <img class="gato_gamer" src="./img/cat-gaming.png" alt="gato gamer">
+        <img class="img-about" src="./img/about-img.png" alt="gato gamer">
     </div>
     <!--.................about end.................-->
 
     <!--.................games start.................-->
-    <div class="games">
+    <div class="games animeX" id="games">
         <h2>Lista de Juegos</h2>
         <ul>
             <li class="list active" data-filter="all">All</li>
@@ -454,9 +465,8 @@
                             </span></p>
                         </div>
                         <div class="plataformas">
-                            <i class="fa-brands fa-xbox"></i>
-                            <i class="fa-brands fa-playstation"></i>
-                            <i class="fa-brands fa-windows"></i>
+                            <i class='bx bxl-android'></i>
+                            <i class='bx bxl-apple'></i>
                         </div>
                     </div>
                 </div>
@@ -478,9 +488,8 @@
                             </span></p>
                         </div>
                         <div class="plataformas">
-                            <i class="fa-brands fa-xbox"></i>
-                            <i class="fa-brands fa-playstation"></i>
-                            <i class="fa-brands fa-windows"></i>
+                            <i class='bx bxl-android'></i>
+                            <i class='bx bxl-apple'></i>
                         </div>
                     </div>
                 </div>
@@ -490,17 +499,19 @@
     <!--.................games end.................-->
 
     <!--.................Descripcion star.................-->
-    <div class="description">
+    <div class="description animeX" id="description">
         <h2>descripcion</h2>
         <div class="boxBx">
             <div class="box">
                 <img src="./img/img-descrip/assassins-creed-mirage.jpg" alt="">
                 <div class="content">
                     <h4><span>1. </span>Descripcion..</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, 
-                        omnis reprehenderit asperiores alias quis doloribus quia error 
-                        earum molestiae, rerum odit, corporis magnam unde adipisci! 
-                        Minus, eaque fugit. Odio, illo.</p>
+                    <p>En Assassin's Creed Mirage encarnarás a Basim, 
+                        un astuto ladrón callejero con visiones de 
+                        pesadilla buscando respuestas y justicia. 
+                        Tras un acto de venganza mortal, Basim huye de B
+                        agdad y se une a una organización ancestral: los 
+                        Ocultos.</p>
                     <div class="btn">
                         <a href="#" class="visita">Visita la pagina oficial</a>
 
@@ -513,10 +524,11 @@
                 <img src="./img/img-descrip/assassins-creed-valhala.jpg" alt="">
                 <div class="content">
                     <h4><span>1. </span>Descripcion..</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, 
-                        omnis reprehenderit asperiores alias quis doloribus quia error 
-                        earum molestiae, rerum odit, corporis magnam unde adipisci! 
-                        Minus, eaque fugit. Odio, illo.</p>
+                    <p>Conviértete en Eivor, un poderoso saqueador vikingo 
+                        y lidera a tu clan desde las inclementes costas de 
+                        Noruega a un nuevo hogar en medio de las exuberantes 
+                        tierras de cultivo de la Inglaterra del siglo IX. 
+                        </p>
                     <div class="btn">
                         <a href="#" class="visita">Visita la pagina oficial</a>
 
@@ -529,10 +541,14 @@
                 <img src="./img/img-descrip/assassins-creed-odyssey.jpg" alt="">
                 <div class="content">
                     <h4><span>1. </span>Descripcion..</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, 
-                        omnis reprehenderit asperiores alias quis doloribus quia error 
-                        earum molestiae, rerum odit, corporis magnam unde adipisci! 
-                        Minus, eaque fugit. Odio, illo.</p>
+                    <p>Embárcate en un viaje épico que te llevará desde tus 
+                        humildes comienzos como un mercenario espartano paria 
+                        a un legendario héroe griego y descubrirás la verdad 
+                        sobre tu misterioso pasado como Alexios o Kassandra. 
+                        Navega hasta los confines del mar Egeo, formando 
+                        alianzas y creando enemigos. En el camino, encontrarás 
+                        figuras históricas, personajes míticos y un elenco de 
+                        otros que impactarán tu viaje.</p>
                     <div class="btn">
                         <a href="#" class="visita">Visita la pagina oficial</a>
 
@@ -545,10 +561,10 @@
                 <img src="./img/img-descrip/assassins-creed-origins.jpg" alt="">
                 <div class="content">
                     <h4><span>1. </span>Descripcion..</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, 
-                        omnis reprehenderit asperiores alias quis doloribus quia error 
-                        earum molestiae, rerum odit, corporis magnam unde adipisci! 
-                        Minus, eaque fugit. Odio, illo.</p>
+                    <p>Assassin's Creed Origins revela los orígenes de la hermandad.
+                        Lucha en épicas batallas, domina el reinventado sistema de 
+                        combate y explora Egipto. Completa las misiones en el orden 
+                        que prefieras y sigue tu camino hacia la grandeza.</p>
                     <div class="btn">
                         <a href="#" class="visita">Visita la pagina oficial</a>
 
@@ -561,10 +577,11 @@
                 <img src="./img/img-descrip/assassins-creed-syndicate.jpg" alt="">
                 <div class="content">
                     <h4><span>1. </span>Descripcion..</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, 
-                        omnis reprehenderit asperiores alias quis doloribus quia error 
-                        earum molestiae, rerum odit, corporis magnam unde adipisci! 
-                        Minus, eaque fugit. Odio, illo.</p>
+                    <p>En Assassin's Creed Syndicate, el impetuoso y rebelde 
+                        Jacob Frye acaba con sus enemigos; con sus rápidos 
+                        asesinatos, y sus contramovimientos. Utiliza las 
+                        mejoradas técnicas de sigilo, para eludir a los 
+                        enemigos y desatar todo un arsenal de armas.</p>
                     <div class="btn">
                         <a href="#" class="visita">Visita la pagina oficial</a>
 
@@ -577,10 +594,11 @@
                 <img src="./img/img-descrip/assassins-creed-1.jpg" alt="">
                 <div class="content">
                     <h4><span>1. </span>Descripcion..</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, 
-                        omnis reprehenderit asperiores alias quis doloribus quia error 
-                        earum molestiae, rerum odit, corporis magnam unde adipisci! 
-                        Minus, eaque fugit. Odio, illo.</p>
+                    <p>El año es 1191 d. C. y la tercera cruzada está 
+                        despedazando Tierra Santa. Como Altaïr intentarás 
+                        detener las hostilidades al reducir a ambos bandos 
+                        del conflicto. Juega como un Maestro Asesino, un 
+                        guerrero rodeado de secreto y temido por su crueldad.</p>
                     <div class="btn">
                         <a href="#" class="visita">Visita la pagina oficial</a>
 
@@ -593,7 +611,7 @@
     <!--.................Descripcion end.................-->
 
     <!--.................Contactar star.................-->
-    <div class="contact">
+    <div class="contact animeX" id="contact">
         <img src="./img/contact.jpg" alt="">
         <div class="form">
             <h1>Contactanos</h1>
@@ -622,7 +640,20 @@
 
     <!--.................footer star.................-->
     <footer>
-        div.infor
+        <div class="info">
+            <img src="./img/Game-Logo.png" alt="" class="logo-footer">
+
+            <ul>
+                <li><a href="#" class="facebook-footer"><i class='bx bxl-facebook' ></i></a></li>
+                <li><a href="#" class="twitter-footer"><i class='bx bxl-twitter' ></i></a></li>
+                <li><a href="#" class="tiktok-footer"><i class='bx bxl-tiktok' ></i></a></li>
+                <li><a href="#" class="youtube-footer"><i class='bx bxl-youtube' ></i></a></li>
+                <li><a href="#" class="instagram-footer"><i class='bx bxl-instagram' ></i></a></li>
+            </ul>
+            
+        </div>
+
+        
     </footer>
     <!--.................footer end.................-->
     <script>
@@ -631,6 +662,33 @@
             var header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0);
         });
+
+        //Responsive navbar
+
+        function altermenu(){
+            const altermenu = document.querySelector('.altermenu');
+            const nav = document.querySelector('.nav');
+            altermenu.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+
+        // Scrolling animation effects
+        window.addEventListener('scroll',function(){
+            var anime = document.querySelectorAll('.animeX')
+
+            for(var s = 0; anime.length; s++){
+                var windowheight = window.innerHeight;
+                var animetop = anime[s].getBoundingClientRect().top;
+                var animepoint = 150;
+
+                if(animetop < windowheight - animepoint){
+                    anime[s].classList.add('active');
+                }
+                else{
+                    anime[s].classList.remove('active');
+                }
+            }
+        })
 
         //Filterable cards
         let list = document.querySelectorAll('.list');
